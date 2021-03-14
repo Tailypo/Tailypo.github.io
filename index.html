@@ -9,26 +9,47 @@ p { position: relative;
 top: 88px;
 z-index: 2;
 }
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  text-align:center;
+}
 </style>
 <title>Tailypo</title>
 <script language="javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js" type="text/javascript"></script>
 </head>
 <body background="image/bg.png">
-<?php
-$filename = 'note.txt';
-?>
 <center>
-<img src="image/itme.png" border="0" width="359" height="364">
+<br>
+<img src="image/itme.png" border="0" width="1015" height="248">
 <h4>
-<a href="https://twitter.com/GiveMeTailypo"><img src="image/twitter.png" onmouseover="this.src="image/twitterpressed.png" onmouseout=this.src="image/twitter.png"/  ></a>
+<a href="https://twitter.com/GiveMeTailypo"><img src='image/twitter.png'></a>
 
 </h4>
 <br>
-<?php
-if (file_exists($filename)) {
-    include($filename);
-}
-?>
+ <table style="width:60%">
+  <tr>
+    <th></th>
+    <th>Link</th>
+	<th>Recent Change</th>
+  </tr>
+  <tr>
+    <td>Happyville Prototype</td>
+	<td><a href="https://tailypo.itch.io/happyville">Itch.io</a></td>
+    <td>Move fishing to its own script Aug 02, 2020</td>
+  </tr>
+  <tr>
+    <td>HappyVille Growmotion</td>
+	<td></td>
+    <td>remove shopkeeper testcall Jan 26, 2021</td>
+  </tr>
+    <tr>
+    <td>Lovecraftian Manager</td>
+    <td><a href="https://drive.google.com/file/d/1ZoTfMRutrMsHRp8NFoy-r1s7Tu54VY_C/view">Google Drive</a></a></</td>
+	<td>Add support for calling specific events Mar 13, 2021</td>
+  </tr>
+</table> 
 </center>
 </body>
 </html>
